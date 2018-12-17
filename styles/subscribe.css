@@ -39,13 +39,22 @@ h2 {
 }
 .card {
 	height: 90%;
+	margin: 1.25%;
 	width: 20rem;
 }
-.card_body ul li {
-	background-image: url("../images/check_green.png");
+.card-img-top {
+	padding: 10%;
 }
 .gift_image {
 	display: block;
 	height: 30%;
+	padding: 1.25%;
 	width: 90%;
+}
+ul {
+	list-style: none;
+}
+ul li:before {
+	content: '✓';
+	margin: 3%;
 }
