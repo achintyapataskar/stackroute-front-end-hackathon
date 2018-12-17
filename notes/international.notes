@@ -1,1 +1,3 @@
 ## Add your findings here ###
+Line 15:<script src="https://www.googletagservices.com/tag/js/gpt.js"></script> 
+This script is used to add google publisher tags.is an ad tagging library for Google Ad Manager that can dynamically build ad requests. GPT takes key details such as ad unit name, ad size, and custom targeting, builds the request, and displays the ad on web pages.
