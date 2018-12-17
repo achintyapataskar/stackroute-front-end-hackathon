@@ -9,12 +9,13 @@ h2 {
 }
 .main_logo {
 	max-width: 132px;
+	margin: 25px;
 }
 .header-content-logo {
 	text-align: center;
 }
 .minimum-amount-notice {
-	font-size:1.8em;
+	font-size:1.6em;
 	font-family:'domain-regular';
 	line-height:initial;
 	color:#a78048;
