@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vogue Magazine Online</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="magazine.css">
+</head>
+
+<body class="section video not-paralax">
+    <div class="overlaybody"></div>
+    <div class="search-lightbox"> <a href="javascript: void(0)" class="close-off-canvas-menu"><i class="fa fa-times"></i></a>
+        <div class="srchpanel">
+            <form name="frmsearch" action="https://www.vogue.in" method="get">
+                <input type="search" id="pauto_search" placeholder="SEARCH" name="s" class="prSrchfield" />
+                <div class="fa fa-search prSrchbtnapart">
+                    <input type="submit" value="Search" class="prSrchbtn" />
+                </div>
+            </form>
+            <div id="search_result_auto"></div>
+        </div>
+    </div>
+    <div class="outerWrap">
+
+
+
+        <!-- /Login Bar -->
+        <header class="site__header">
+
+            <!-- Login Bar -->
+            <div class="top_bar">
+                <div class="container">
+                    <div class="top_menu_wrapper">
+                        <ul class="top_left_menu">
+                        </ul>
+                        <ul class="top_right_menu top_menu_login loadedGoogle noOneClickGoogle loadedFB noOneClickFB">
+
+                            <li class="menu__item">
+
+                                <div href="javascript:;" class="menu__link external signup_part">
+                                    <a href="/login"><span>Login</span></a>
+                                    <span class="fblogin"> /
+                                        <a href="/register">Sign up</a>
+                                    </span>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /Login Bar -->
+
+            <div class="site__nav container">
+
+                <div class="menu_itm logo_wrapper">
+                    <a class="site__logo" href="/" title="Vogue India">
+                        <svg viewBox="0 0 948 250" preserveAspectRatio="xMinYMax meet" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M377.651 89.431c1.056 4.008 13.003 52.856-7.91 97.701-2.042 4.373-25.775 61.692-90.24 61.868-64.465-.176-88.198-57.495-90.24-61.868-20.917-44.845-8.966-93.693-7.91-97.7C207.03.763 279.265 2 279.265 2h.465s72.241-1.237 97.92 87.43zm-53.917 123.642c1.616-3.991 14.797-30.378 14.823-87.538.022-57.156-13.254-83.539-14.866-87.534C311.427.747 280.079 3.63 280.079 3.63h-1.156S247.57.747 235.311 38c-1.616 3.995-14.797 30.378-14.823 87.534-.022 57.16 13.255 83.547 14.87 87.538 12.26 37.25 43.609 34.372 43.609 34.372h1.155s31.353 2.878 43.612-34.372zm582.039 16.843c40.893-25.07 41.71-74.582 41.71-74.582H948v88.552H777.084v-1.695h18.321V6.6h-31.862v171.824c0 73.958-60.254 71.566-70.257 71.566-78.314 0-81.421-50.088-81.421-71.919V6.747H593V5.052h79.135v1.72h-18.86v189.06c0 14.366 3.168 21.156 5.015 25.333 13.715 27.944 39.62 25.987 42.653 25.987 48.307 0 60.753-37.147 60.753-72.431V6.764h-18.991V5h198.103v76.256h-.743c0-22.85-16.045-43.558-18.708-47.086-17.718-26.636-52.618-27.608-52.618-27.608h-31.976v113.794c28.908 0 35.04-7.577 37.434-9.401 21.05-17.106 17.053-39.96 17.053-39.96h1.599v101.467h-1.734c0-27.686-17.583-39.294-22.241-43.097-10.66-8.747-32.11-7.18-32.11-7.18v119.959h26.378c26.109-1.313 40.632-11.058 42.63-12.228zM113.853 248L21.006 6.691H0V5h82.123l-.013 1.73H62.219l69.289 174.57L183.389 6.76h-19.148V5.013H204V6.76h-18.766L113.853 248zM533.4 10.767C556.728 16.125 564.475 0 564.475 0v85.641c-8.64-38.701-32.744-63.88-34.862-66.357-11.242-12.638-22.745-16.678-35.572-16.678-28.54.652-37.398 28.145-39.381 32.575-11.904 29.446-12.035 77.009-12.035 81.173-1.058 47.171 7.804 81.314 9.255 86.912 7.673 29.446 20.632 36.873 22.75 38.435 17.559 10.553 37.515 3.293 39.907 2.477 26.584-10.942 25.921-41.693 25.921-41.693v-53.813h-17.851v-1.958H596v1.825h-16.13v96.03c-12.697-21.761-38.087-9.118-42.714-7.165-25.264 11.986-33.595 11.08-36.771 11.338-32.37 2.73-54.853-17.07-56.7-18.632-40.47-34.013-44.702-81.83-44.968-85.736-5.29-57.462 20.366-92.257 21.556-94.21C453.867 2.348 485.71.914 491.265.653c15.468-1.306 36.583 9.023 42.135 10.114z"
+                                fill="#000" fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <span>India</span>
+                </div>
+
+                <div class="site__menu menu_itm">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="https://www.vogue.in/fashion/" class="menu__link external">Fashion</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="https://www.vogue.in/beauty/" class="menu__link external">Beauty</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="https://www.vogue.in/weddings/" class="menu__link external">Weddings</a>
+                            </li>
+                            <li class="menu__item menu__item--selected">
+                                <a href="https://www.vogue.in/magazine/" class="menu__link external">Magazine</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="https://www.vogue.in/vogue-lovers/" class="menu__link external">Vogue Lovers</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="javascript:;" class="menu__link external">More&nbsp;<i class="down-icon"></i>
+                                </a>
+                                <ul class="dropdown">
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/portfolio/" class="menu__link external">Portfolio</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/vogue-closet" class="menu__link external">Closet</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/vogue-offers/" class="menu__link external">Offers</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/culture-and-living/" class="menu__link external">Culture
+                                            &amp; Living</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/horoscope/" class="menu__link external">Horoscope</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/how-to/" class="menu__link external">How To</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/fashion/fashion-news/" class="menu__link external">News</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/people/" class="menu__link external">People</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/wedding-wardrobe/" class="menu__link external">Wedding
+                                            Wardrobe</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/wellness/" class="menu__link external">Wellness</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/microsite/brides-in-colour/" class="menu__link external">Brides
+                                            in Colour</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/microsite/fluid-fashion/" class="menu__link external">Fluid
+                                            Fashion</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="https://www.vogue.in/microsite/your_guide_to_gems/" class="menu__link external">Your
+                                            Guide to Gems</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item hide_on_mobile"><a class="inside_menu_links" href="https://www.vogue.in/subscription/?subscribe=Header">SUBSCRIBE</a></li>
+                        </ul>
+                    </nav>
+                    <!--// .menu -->
+                </div>
+                <!--// .site-menu -->
+
+                <div class="menu_itm mobile_menu_icon">
+                    <ul class="right_section">
+                        <!-- <li>
+<a href="#">SUBSCRIBE</a>
+</li> -->
+                        <li class="menu__item subscribe_btn_mobile hide_on_desktop"><a href="https://www.vogue.in/subscription/?subscribe=Header"
+                                class="menu__link highlight"><span>SUBSCRIBE</span></a></li>
+                        <li class="top_mobile_profile_li" alt="Profile Icon">
+                            <a href="javascript:void(0)" class="top_mobile_profile_icon"><img alt="Profile Icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDQ5LjY1NCA0OS42NTQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5LjY1NCA0OS42NTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjQuODI3LDBDMTEuMTM4LDAsMC4wMDEsMTEuMTM4LDAuMDAxLDI0LjgyN2MwLDEzLjY4OSwxMS4xMzcsMjQuODI3LDI0LjgyNiwyNC44MjcgICAgYzEzLjY4OCwwLDI0LjgyNi0xMS4xMzgsMjQuODI2LTI0LjgyN0M0OS42NTMsMTEuMTM4LDM4LjUxNywwLDI0LjgyNywweiBNMzkuMTQyLDM4LjUxYzAtMC41NzQsMC0wLjk3OSwwLTAuOTc5ICAgIGMwLTMuMzg2LTMuOTEyLTQuNjIxLTYuMDA2LTUuNTE3Yy0wLjc1OC0wLjMyMy0yLjE4Ny0xLjAxMS0zLjY1My0xLjcyOGMtMC40OTUtMC4yNDItMC45NDEtMC44ODctMC45OTctMS40MzhsLTAuMTYyLTEuNjA0ICAgIGMxLjEyMi0xLjA0NSwyLjEzMy0yLjUsMi4zMDQtNC4xMjJoMC4yNTNjMC4zOTgsMCwwLjc3My0wLjI5OCwwLjgzMi0wLjY2M2wwLjM5Ny0yLjQ1M2MwLjA1My0wLjUyNC0wLjQ0Mi0wLjg0Mi0wLjg0My0wLjg0MiAgICBjMC4wMTEtMC4wNTIsMC4wMi0wLjEwNSwwLjAyNS0wLjE0OWMwLjA1MS0wLjI5NSwwLjA4Mi0wLjU4LDAuMTAyLTAuODU3YzAuMDI1LTAuMjIzLDAuMDQ1LTAuNDU0LDAuMDU2LTAuNjkzICAgIGMwLjA0Mi0xLjE1OC0wLjE1NC0yLjE3MS0wLjQ3OS0yLjczOGMtMC4zMy0wLjc5My0wLjgzLTEuNTYzLTEuNTI2LTIuMjIzYy0xLjkzOS0xLjgzNi00LjE4OC0yLjU1MS02LjEwNi0xLjA3NSAgICBjLTEuMzA2LTAuMjI2LTIuODU4LDAuMzcxLTMuOTc5LDEuNjg0Yy0wLjYxMiwwLjcxNy0wLjk5MywxLjUzNy0xLjE1NiwyLjM0NGMtMC4xNDYsMC41MDMtMC4yNDMsMS4xMTItMC4yNjcsMS43NzEgICAgYy0wLjAyNiwwLjczMywwLjA0NiwxLjQwNCwwLjE4MSwxLjk0N2MtMC4zODIsMC4wMjQtMC43NjQsMC4zMzgtMC43NjQsMC44MzNsMC4zOTYsMi40NTNjMC4wNTksMC4zNjUsMC40MzQsMC42NjMsMC44MzIsMC42NjMgICAgaDAuMjI3YzAuMzYsMS43NTQsMS4yOTIsMy4xOTQsMi4zMjMsNC4xOThsLTAuMTU2LDEuNTUxYy0wLjA1NiwwLjU1LTAuNTAyLDEuMTkzLTAuOTk4LDEuNDM4ICAgIGMtMS40MTgsMC42OTItMi44MTUsMS4zNTgtMy42NTEsMS43MDNjLTEuOTcsMC44MTItNi4wMDYsMi4xMzEtNi4wMDYsNS41MTd2MC43NjZjLTMuMjg4LTMuNTQxLTUuMzE2LTguMjY2LTUuMzE2LTEzLjQ2NyAgICBjMC0xMC45MzIsOC44OTQtMTkuODI2LDE5LjgyNi0xOS44MjZjMTAuOTMzLDAsMTkuODI2LDguODk0LDE5LjgyNiwxOS44MjZDNDQuNjUzLDMwLjEzMyw0Mi41NDgsMzQuOTQ2LDM5LjE0MiwzOC41MXoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"></a>
+                            <ul class="top_mobile_submenu before_login_mobile">
+                                <li><a href="/register">SIGN UP</a></li>
+                                <li><a href="/login">Login</a></li>
+                            </ul>
+                            <ul class="top_mobile_submenu after_login_mobile">
+                                <li><a href="/my-profile/" target="_blank">MY PROFILE</a></li>
+                                <li><a href="javascript:;" class="multisite_logout">SIGN OUT</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" id="open_menu"><svg viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1,0 L21,0 C21.5522847,-1.01453063e-16 22,0.44771525 22,1 C22,1.55228475 21.5522847,2 21,2 L1,2 C0.44771525,2 6.76353751e-17,1.55228475 0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z M1,7 L21,7 C21.5522847,7 22,7.44771525 22,8 C22,8.55228475 21.5522847,9 21,9 L1,9 C0.44771525,9 6.76353751e-17,8.55228475 0,8 C-6.76353751e-17,7.44771525 0.44771525,7 1,7 Z M1,14 L21,14 C21.5522847,14 22,14.4477153 22,15 C22,15.5522847 21.5522847,16 21,16 L1,16 C0.44771525,16 6.76353751e-17,15.5522847 0,15 C-6.76353751e-17,14.4477153 0.44771525,14 1,14 Z"></path>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--// .site-nav -->
+
+            <div class="popup_menu">
+                <a href="javascript:void(0)" class="close-btn-menu"></a>
+                <div class="popup_menu_inner">
+                    <div class="container_menu_wrapper">
+                        <div class="content_menu_wrapper">
+                            <div class="inner_menu_wrapper">
+                                <div class="menu_section">
+
+
+
+
+
+                                    <div class="menu_section_li mb-xs-10">
+                                        <div class="inner_section">
+                                            <ul class="domain-regular text-capitalize">
+                                                <li>
+                                                    <h2>
+                                                        <a href="https://www.vogue.in/fashion/" class="inside_menu_links">Fashion</a></h2>
+                                                </li>
+                                                <li>
+                                                    <h2>
+                                                        <a href="https://www.vogue.in/beauty/" class="inside_menu_links">Beauty</a></h2>
+                                                </li>
+                                                <li>
+                                                    <h2>
+                                                        <a href="https://www.vogue.in/weddings/" class="inside_menu_links">Weddings</a></h2>
+                                                </li>
+                                                <li>
+                                                    <h2>
+                                                        <a href="https://www.vogue.in/magazine/" class="inside_menu_links">Magazine</a></h2>
+                                                </li>
+                                                <li>
+                                                    <h2>
+                                                        <a href="https://www.vogue.in/vogue-lovers/" class="inside_menu_links">Vogue
+                                                            Lovers</a></h2>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+
+
+                                        <div class="inner_section hide_mobile">
+                                            <label>FOLLOW US</label>
+                                            <ul class="social_urls">
+                                                <li><a href="https://www.facebook.com/VogueIndia" class="inside_menu_links external"
+                                                        rel="nofollow" target="_blank"><svg class="styles__Wrapper-hZyTcS iMuRzU"
+                                                            width="48px" height="48px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M24.5 33v-8.2h3l.4-3.2h-3.4v-2c0-1 .3-1.6 1.7-1.6H28V15a26 26 0 0 0-2.6-.1c-2.7 0-4.4 1.5-4.4 4.2v2.4h-3v3.2h3V33h3.5z"></path>
+                                                        </svg></a></li>
+
+                                                <li>
+                                                    <a href="https://twitter.com/VOGUEIndia" class="inside_menu_links external"
+                                                        rel="nofollow" target="_blank">
+                                                        <svg class="styles__Wrapper-hZyTcS iMuRzU" width="48px" height="48px"
+                                                            viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M32.7 18.6l-1.1.4c.4-.4.7-1 1-1.5 0-.2-.2-.3-.4-.2a6.9 6.9 0 0 1-1.9.7L30 18a3.7 3.7 0 0 0-3.6-.7A3.5 3.5 0 0 0 24 21a.1.1 0 0 1-.2.1c-2.6-.2-5-1.4-6.6-3.4H17a3.5 3.5 0 0 0 .6 4.4l-.8-.4c-.2 0-.3 0-.3.2 0 1.5.8 2.7 2.1 3.3a3.4 3.4 0 0 1-.7 0c-.1 0-.3 0-.2.2a3.6 3.6 0 0 0 2.9 2.4 6.9 6.9 0 0 1-3.8 1.2h-.4c-.1 0-.3 0-.3.2l.1.3c1.6.9 3.3 1.3 5.1 1.3 1.6 0 3-.3 4.3-.9a9.5 9.5 0 0 0 5.1-5.5c.4-1 .7-2.3.7-3.4 0-.3 0-.4.2-.6.6-.4 1-1 1.5-1.5 0-.2 0-.4-.3-.3"></path>
+                                                        </svg>
+                                                    </a></li>
+
+                                                <li><a href="https://instagram.com/vogueindia/" class="inside_menu_links external"
+                                                        rel="nofollow" target="_blank"><svg class="styles__Wrapper-hZyTcS iMuRzU"
+                                                            width="48px" height="48px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M16.2 12.6c0 2-1.6 3.6-3.6 3.6H5.4c-2 0-3.6-1.6-3.6-3.6V5.4c0-2 1.6-3.6 3.6-3.6h7.2c2 0 3.6 1.6 3.6 3.6v7.2zM12.6 0H5.4C2.4 0 0 2.4 0 5.4v7.2c0 3 2.4 5.4 5.4 5.4h7.2c3 0 5.4-2.4 5.4-5.4V5.4c0-3-2.4-5.4-5.4-5.4z"
+                                                                mask="url(#mask-2)" transform="translate(15 15)"></path>
+                                                            <path d="M9 12a3 3 0 1 1 0-6.1 3 3 0 0 1 0 6M9 4a5 5 0 1 0 0 10A5 5 0 0 0 9 4M14 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                                                                mask="url(#mask-2)" transform="translate(15 15)"></path>
+                                                        </svg></a></li>
+
+                                                <li><a href="https://www.youtube.com/user/IndiaVogue" class="inside_menu_links external"
+                                                        rel="nofollow" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            x="0px" y="0px" viewBox="0 0 50 50" style="fill:#ffffff;">
+                                                            <g id="surface1">
+                                                                <path style=" " d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z "></path>
+                                                            </g>
+                                                        </svg></a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div><!-- menu_section_li -->
+
+                                    <div class="menu_section_li">
+                                        <div class="inner_section">
+                                            <ul class="inner_section_li">
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/portfolio/" class="inside_menu_links">Portfolio</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/vogue-closet" class="inside_menu_links">Closet</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/vogue-offers/" class="inside_menu_links">Offers</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/culture-and-living/" class="inside_menu_links">Culture
+                                                        &amp; Living</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/horoscope/" class="inside_menu_links">Horoscope</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/how-to/" class="inside_menu_links">How
+                                                        To</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/fashion/fashion-news/" class="inside_menu_links">News</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/people/" class="inside_menu_links">People</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/wedding-wardrobe/" class="inside_menu_links">Wedding
+                                                        Wardrobe</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/wellness/" class="inside_menu_links">Wellness</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/microsite/brides-in-colour/" class="inside_menu_links">Brides
+                                                        in Colour</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/microsite/fluid-fashion/" class="inside_menu_links">Fluid
+                                                        Fashion</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="https://www.vogue.in/microsite/your_guide_to_gems/" class="inside_menu_links">Your
+                                                        Guide to Gems</a>
+                                                </li>
+                                                <li class="subscribe_li inside_menu_links"><a href="/subscription?subscribe=Header">SUBSCRIBE</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div><!-- menu_section_li -->
+
+
+                                </div>
+                                <div class="menu_section">
+
+                                    <div class="menu_section_li mobile_social_block">
+                                        <div class="inner_section hide_desktop ">
+                                            <label>FOLLOW US</label>
+                                            <ul class="social_urls">
+                                                <li><a href="https://www.facebook.com/VogueIndia" class="inside_menu_links external"
+                                                        rel="nofollow" target="_blank"><svg class="styles__Wrapper-hZyTcS iMuRzU"
+                                                            width="48px" height="48px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M24.5 33v-8.2h3l.4-3.2h-3.4v-2c0-1 .3-1.6 1.7-1.6H28V15a26 26 0 0 0-2.6-.1c-2.7 0-4.4 1.5-4.4 4.2v2.4h-3v3.2h3V33h3.5z"></path>
+                                                        </svg></a></li>
+
+                                                <li>
+                                                    <a href="https://twitter.com/VOGUEIndia" class="inside_menu_links external"
+                                                        rel="nofollow" target="_blank">
+                                                        <svg class="styles__Wrapper-hZyTcS iMuRzU" width="48px" height="48px"
+                                                            viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M32.7 18.6l-1.1.4c.4-.4.7-1 1-1.5 0-.2-.2-.3-.4-.2a6.9 6.9 0 0 1-1.9.7L30 18a3.7 3.7 0 0 0-3.6-.7A3.5 3.5 0 0 0 24 21a.1.1 0 0 1-.2.1c-2.6-.2-5-1.4-6.6-3.4H17a3.5 3.5 0 0 0 .6 4.4l-.8-.4c-.2 0-.3 0-.3.2 0 1.5.8 2.7 2.1 3.3a3.4 3.4 0 0 1-.7 0c-.1 0-.3 0-.2.2a3.6 3.6 0 0 0 2.9 2.4 6.9 6.9 0 0 1-3.8 1.2h-.4c-.1 0-.3 0-.3.2l.1.3c1.6.9 3.3 1.3 5.1 1.3 1.6 0 3-.3 4.3-.9a9.5 9.5 0 0 0 5.1-5.5c.4-1 .7-2.3.7-3.4 0-.3 0-.4.2-.6.6-.4 1-1 1.5-1.5 0-.2 0-.4-.3-.3"></path>
+                                                        </svg>
+                                                    </a></li>
+
+                                                <li><a href="https://instagram.com/vogueindia/" class="inside_menu_links external"
+                                                        rel="nofollow" target="_blank"><svg class="styles__Wrapper-hZyTcS iMuRzU"
+                                                            width="48px" height="48px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M16.2 12.6c0 2-1.6 3.6-3.6 3.6H5.4c-2 0-3.6-1.6-3.6-3.6V5.4c0-2 1.6-3.6 3.6-3.6h7.2c2 0 3.6 1.6 3.6 3.6v7.2zM12.6 0H5.4C2.4 0 0 2.4 0 5.4v7.2c0 3 2.4 5.4 5.4 5.4h7.2c3 0 5.4-2.4 5.4-5.4V5.4c0-3-2.4-5.4-5.4-5.4z"
+                                                                mask="url(#mask-2)" transform="translate(15 15)"></path>
+                                                            <path d="M9 12a3 3 0 1 1 0-6.1 3 3 0 0 1 0 6M9 4a5 5 0 1 0 0 10A5 5 0 0 0 9 4M14 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                                                                mask="url(#mask-2)" transform="translate(15 15)"></path>
+                                                        </svg></a></li>
+
+                                                <li><a href="https://www.youtube.com/user/IndiaVogue" class="inside_menu_links external"
+                                                        rel="nofollow" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            x="0px" y="0px" viewBox="0 0 50 50" style="fill:#ffffff;">
+                                                            <g id="surface2">
+                                                                <path style=" " d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z "></path>
+                                                            </g>
+                                                        </svg></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu_section_li">
+                                        <div class="inner_section">
+                                            <ul class="inner_section_li countries_urls">
+                                                <li><a href="http://www.vogue.com.au/" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Australia</a></li>
+                                                <li><a href="http://vogue.globo.com" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Brazil</a></li>
+                                                <li><a href="http://www.vogue.com.cn/" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">China</a></li>
+                                                <li><a href="http://www.vogue.fr/" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">France</a></li>
+                                                <li><a href="http://www.vogue.de/" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Germany</a></li>
+                                                <li><a href="http://www.voguehellas.gr/" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Greece</a></li>
+                                                <li><a href="http://www.vogue.it/" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Italy</a></li>
+                                                <li><a href="http://www.vogue.co.jp/" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Japan</a></li>
+                                                <li><a href="http://www.style.co.kr/vogue" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Korea</a></li>
+                                                <li><a href="http://www.vogue.mx" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Mexico</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- menu_section_li -->
+
+                                    <div class="menu_section_li">
+                                        <div class="inner_section">
+                                            <ul class="inner_section_li countries_urls">
+                                                <li><a href="http://www.vogue.nl/" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Netherlands</a></li>
+                                                <li><a href="http://www.vogue.xl.pt" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Portugal</a></li>
+                                                <li><a href="http://www.vogue.ru" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Russia</a></li>
+                                                <li><a href="http://www.vogue.es/" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Spain</a></li>
+                                                <li><a href="http://www.vogue.com.tw/" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Taiwan</a></li>
+                                                <li><a href="http://www.vogue.co.th" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Thailand</a></li>
+                                                <li><a href="http://www.vogue.com.tr" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Turkey</a></li>
+                                                <li><a href="http://www.vogue.co.uk/" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">UK</a></li>
+                                                <li><a href="http://www.vogue.com/?us_site=y" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">USA</a></li>
+                                                <li><a href="http://www.vogue.ua" class="external inside_menu_links"
+                                                        rel="nofollow" target="_blank">Ukraine</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- menu_section_li -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+
+<
+            <h1 class="feature-unit-title ">Magazine</h1>
+        
+           <p>
+               <font size="5">
+                   Before it's in fashion, it's in Vogue - join the Vogue Lovers<br> community to get one-month
+                    free access to our magazine <br>archive </font-size>
+                </p>
+
+               
+
+
+        
+
+
+
+
+        <div class="row">
+            <div class="col-sm-9">
+
+                <img src="Images/0001-600x777.jpg" width="400">
+                <img src="Images/0290-600x777.jpg" width="200" height="50%">
+
+                <img src="Images/0291-600x777.jpg" width="200" height="50%">
+
+
+                <div class="row">
+
+                    <section id="carousel">
+                        <div id="carousel-home" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-home" data-slide-to="1"></li>
+                                <li data-target="#carousel-home" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img class="d-block img-fluid" src="Images/VOGUE_MAIN-ISSUE-SUPPLIMENT_SEP_2017_Stitch-file_Page_001-21.jpg"
+                                        alt="Women taking a picture with camera">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="Images/VOGUE_MAIN-ISSUE_AUG_2017_EPUB_Page_001-2-218x283.jpg"
+                                        alt="A wet spiderweb">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="Images/vogue-march-issue-218x283.png" alt="A wet spiderweb">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="Images/Vogue_Nov_2017_Page_001-218x283.jpg" alt="A wet spiderweb">
+
+                                </div>
+
+
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="Images/VOGUE_MAIN-ISSUE_AUG_2017_EPUB_Page_001-2-218x283.jpg"
+                                        alt="A wet spiderweb">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="Images/Vogue-July-Cove-218x283.jpg" alt="Heart made with two handss">
+
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </section>
+                    <img src="Images/0306-600x777.jpg" width="300">
+
+                    <img src="Images/0307-600x777.jpg" width="300">
+
+
+
+
+
+                </div>
+            </div>
+            <div class="col-sm-3" font size="4">
+                <h2>Contents</h2>
+                <hr>
+                <ul>
+                    <h4>Shweta Bachchan Nanda on the brave new world of millennial parenting</h4>
+
+                    <p>Gone are the helicopter moms of the past; today’s more…</p>
+                    <hr>
+                    <h4>Meet Anita Dube, the first ever female curator at Kochi biennale
+                    </h4>
+                    <p>Get ready for an explosion of canonical art from the…</p>
+                    <hr>
+                    <h4> Katrina Kaif: “Regret is the single-most useless emotion on the planet”</h4>
+
+                    <p> Emerging from a much talked-about break-up with a rock-solid attitude,…</p>
+                    <hr>
+                    <h4>The makeup, skincare and perfumes you need for December’s party season</h4>
+                    <p>Don’t go out without these</p>
+                    <hr>
+                   
+
+
+
+
+
+
+
+
+
+                </ul>
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center; color:red">
+            <span style="font-size: 20px; background-color:white; padding: 0 10px;">
+                IN THIS ISSUE
+                <!--Padding is optional-->
+            </span>
+        </div>
+
+
+
+
+
+
+
+        <div class="grid-inner-wrap grid-inner-wrap1">
+            <section class="Story-1">
+                <figure class="post-pic">
+                    <a href="/content/shweta-bachchan-nanda-on-the-brave-new-world-of-millennial-parenting/" title="">
+                        <img alt="" title="" src="https://media.vogue.in/wp-content/uploads/2018/12/FEATURED.1-400x400.jpg"
+                            class="src-set-images attachment-custom-400 size-custom-400 wp-post-image story--image"
+                            srcset="https://media.vogue.in/wp-content/uploads/2018/12/FEATURED.1-184x184.jpg 184w, https://media.vogue.in/wp-content/uploads/2018/12/FEATURED.1-270x270.jpg 270w, https://media.vogue.in/wp-content/uploads/2018/12/FEATURED.1-400x400.jpg 400w"
+                            sizes="(max-width: 400px) 25vw, 400px" width="400" height="400"></a></figure>
+                <div class="post-details">
+                    <h3><a title="" href="/content/shweta-bachchan-nanda-on-the-brave-new-world-of-millennial-parenting/"
+                            class="Story-1-Headline">Shweta Bachchan Nanda on the brave new world of millennial
+                            parenting</a></h3><a title="" class="author-post" href="https://author.vogue.in/author/shweta-bachchan-nanda/">
+                        by Shweta Bachchan Nanda</a>
+                    <div class="social-share"><a href="javascript:void(0)" title="" class="socil-button"></a>
+                        <div class="social-icon"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.vogue.in%2Fcontent%2Fshweta-bachchan-nanda-on-the-brave-new-world-of-millennial-parenting%2F%3Futm_source%3Dfacebook%26utm_medium%3Dsocial%26utm_campaign%3DVogueIndia%2DSocialShareConversions"
+                                rel="facebook nofollow" class="fa fa-facebook facebook Story-1-Social-Facebook external"
+                                data-share-url="/content/shweta-bachchan-nanda-on-the-brave-new-world-of-millennial-parenting/"
+                                data-post-id="5" target="_blank"> </a><a href="https://twitter.com/share?text=Shweta%20Bachchan%20Nanda%20on%20the%20brave%20new%20world%20of%20millennial%20parenting&amp;url=https%3A%2F%2Fwww.vogue.in%2Fcontent%2Fshweta-bachchan-nanda-on-the-brave-new-world-of-millennial-parenting%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial%26utm_campaign%3DVogueIndia-SocialShareConversions"
+                                rel="twitter" class="fa fa-twitter twitter Story-1-Social-twitter" data-share-url="/content/shweta-bachchan-nanda-on-the-brave-new-world-of-millennial-parenting/"
+                                data-post-id="5" target="_blank"> </a><a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.vogue.in%2Fcontent%2Fshweta-bachchan-nanda-on-the-brave-new-world-of-millennial-parenting%2F%3Futm_source%3Dpinterest%26utm_medium%3Dsocial%26utm_campaign%3DVogueIndia%2DSocialShareConversions&amp;media=&amp;description=Shweta%20Bachchan%20Nanda%20on%20the%20brave%20new%20world%20of%20millennial%20parenting"
+                                rel="pinterest" class="fa fa-pinterest-p pinterest-p Story-1-Social-pinterest"
+                                data-share-url="https://www.vogue.in/content/shweta-bachchan-nanda-on-the-brave-new-world-of-millennial-parenting/"
+                                data-post-id="5" target="_blank"> </a><a href="mailto:?subject=Shweta%20Bachchan%20Nanda%20on%20the%20brave%20new%20world%20of%20millennial%20parenting&amp;body=https%3A%2F%2Fwww.vogue.in%2Fcontent%2Fshweta-bachchan-nanda-on-the-brave-new-world-of-millennial-parenting%2F%3Futm_source%3Dmail%26utm_medium%3Dsocial%26utm_campaign%3DGQIndia%2DSocialShareConversions"
+                                rel="envelope" class="fa fa-envelope envelope Story-1-Social-email" data-share-url="https://www.vogue.in/content/shweta-bachchan-nanda-on-the-brave-new-world-of-millennial-parenting/"
+                                data-post-id="5" target="_blank"> </a><a href="whatsapp://send?text=Shweta%20Bachchan%20Nanda%20on%20the%20brave%20new%20world%20of%20millennial%20parenting%0D%0Ahttps%3A%2F%2Fwww.vogue.in%2Fcontent%2Fshweta-bachchan-nanda-on-the-brave-new-world-of-millennial-parenting%2F%3Futm_source%3Dwhatsapp%26utm_medium%3Dsocial%26utm_campaign%3DVogueIndia%2DSocialShareConversions"
+                                data-action="share/whatsapp/share" class="fa fa-whatsapp whatsapp social_share Story-1-Social-whatsapp external"
+                                data-share-url="https://www.vogue.in/content/shweta-bachchan-nanda-on-the-brave-new-world-of-millennial-parenting/"
+                                data-post-id="5" rel="nofollow" target="_blank"> </a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="Story-2">
+                <figure class="post-pic"><a href="/content/meet-anita-dube-the-first-ever-female-curator-at-kochi-biennale/"
+                        title=""><img alt="" title="" src="https://media.vogue.in/wp-content/uploads/2018/12/comrade-in-art-400x400.jpg"
+                            class="src-set-images attachment-custom-400 size-custom-400 wp-post-image story--image"
+                            srcset="https://media.vogue.in/wp-content/uploads/2018/12/comrade-in-art-184x184.jpg 184w, https://media.vogue.in/wp-content/uploads/2018/12/comrade-in-art-270x270.jpg 270w, https://media.vogue.in/wp-content/uploads/2018/12/comrade-in-art-400x400.jpg 400w"
+                            sizes="(max-width: 400px) 25vw, 400px" width="400" height="400"><span class="count">5</span></a>
+                </figure>
+                <div class="post-details">
+                    <h3><a title="" href="/content/meet-anita-dube-the-first-ever-female-curator-at-kochi-biennale/"
+                            class="Story-2-Headline">Meet Anita Dube, the first ever female curator at Kochi
+                            biennale</a></h3>
+                    <a title="" class="author-post" href="https://author.vogue.in/author/georgina-maddox/"> by
+                        Georgina Maddox</a>
+                    <div class="social-share"><a href="javascript:void(0)" title="" class="socil-button"></a>
+                        <div class="social-icon"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.vogue.in%2Fcontent%2Fmeet-anita-dube-the-first-ever-female-curator-at-kochi-biennale%2F%3Futm_source%3Dfacebook%26utm_medium%3Dsocial%26utm_campaign%3DVogueIndia%2DSocialShareConversions"
+                                rel="facebook nofollow" class="fa fa-facebook facebook Story-2-Social-Facebook external"
+                                data-share-url="/content/meet-anita-dube-the-first-ever-female-curator-at-kochi-biennale/"
+                                data-post-id="5" target="_blank"> </a><a href="https://twitter.com/share?text=Meet%20Anita%20Dube%2C%20the%20first%20ever%20female%20curator%20at%20Kochi%20biennale&amp;url=https%3A%2F%2Fwww.vogue.in%2Fcontent%2Fmeet-anita-dube-the-first-ever-female-curator-at-kochi-biennale%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial%26utm_campaign%3DVogueIndia-SocialShareConversions"
+                                rel="twitter" class="fa fa-twitter twitter Story-2-Social-twitter" data-share-url="/content/meet-anita-dube-the-first-ever-female-curator-at-kochi-biennale/"
+                                data-post-id="5" target="_blank"> </a><a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.vogue.in%2Fcontent%2Fmeet-anita-dube-the-first-ever-female-curator-at-kochi-biennale%2F%3Futm_source%3Dpinterest%26utm_medium%3Dsocial%26utm_campaign%3DVogueIndia%2DSocialShareConversions&amp;media=&amp;description=Meet%20Anita%20Dube%2C%20the%20first%20ever%20female%20curator%20at%20Kochi%20biennale"
+                                rel="pinterest" class="fa fa-pinterest-p pinterest-p Story-2-Social-pinterest"
+                                data-share-url="https://www.vogue.in/content/meet-anita-dube-the-first-ever-female-curator-at-kochi-biennale/"
+                                data-post-id="5" target="_blank"> </a><a href="mailto:?subject=Meet%20Anita%20Dube%2C%20the%20first%20ever%20female%20curator%20at%20Kochi%20biennale&amp;body=https%3A%2F%2Fwww.vogue.in%2Fcontent%2Fmeet-anita-dube-the-first-ever-female-curator-at-kochi-biennale%2F%3Futm_source%3Dmail%26utm_medium%3Dsocial%26utm_campaign%3DGQIndia%2DSocialShareConversions"
+                                rel="envelope" class="fa fa-envelope envelope Story-2-Social-email" data-share-url="https://www.vogue.in/content/meet-anita-dube-the-first-ever-female-curator-at-kochi-biennale/"
+                                data-post-id="5" target="_blank"> </a><a href="whatsapp://send?text=Meet%20Anita%20Dube%2C%20the%20first%20ever%20female%20curator%20at%20Kochi%20biennale%0D%0Ahttps%3A%2F%2Fwww.vogue.in%2Fcontent%2Fmeet-anita-dube-the-first-ever-female-curator-at-kochi-biennale%2F%3Futm_source%3Dwhatsapp%26utm_medium%3Dsocial%26utm_campaign%3DVogueIndia%2DSocialShareConversions"
+                                data-action="share/whatsapp/share" class="fa fa-whatsapp whatsapp social_share Story-2-Social-whatsapp external"
+                                data-share-url="https://www.vogue.in/content/meet-anita-dube-the-first-ever-female-curator-at-kochi-biennale/"
+                                data-post-id="5" rel="nofollow" target="_blank"> </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <header class="col-md-12 text-left">
+
+                    </header>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <img src="Images/Katrina-Kaif-Vogue-India-December-20181-480x270.jpg" alt="Katrina-Kaif-Vogue-India">
+                        <p>
+                            <h3>Katrina Kaif: “Regret is the single-most useless emotion on the planet.”</h3>
+                        </p>
+                        <a title="" class="author-post" href="https://author.vogue.in/author/chandni-sehgal/"> By
+                            CHANDNI SEHGAL</a>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <img src="Images/Glampalm-Schwarkopf-Glamglow-400x400.jpg" alt="Glampalm-Schwarkopf-Glamglow">
+
+                        <p> The makeup, skincare and perfumes you need for December’s party season.</p>
+                        <a title="" class="author-post" href="https://author.vogue.in/author/vogue-india/"> by
+                            Vogue India</a>
+
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <img src="Images/suite-life-feature-480x270.jpg" alt="suite-life-feature">
+                        <p>How to get an upgrade, and other tips to read before booking a hotel room.</p>
+                        <a title="" class="author-post" href="https://author.vogue.in/author/priti-mahajan/"> by
+                            Priti Mahajan</a>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="midWrap endfoot">Copyright © Vogue India 2018</div>
+
+        </footer>
+
+
+
+
+
+
+
+
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

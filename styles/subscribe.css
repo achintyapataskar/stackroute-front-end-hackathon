@@ -1,0 +1,61 @@
+h2 {
+	margin-bottom:50px;
+	font-size:2.2em;
+	font-family:'domain-regular';
+	text-align: center;
+}
+.subscription-wrapper {
+	background-color: #f9f9f9; 
+}
+.main_logo {
+	max-width: 132px;
+	margin: 25px;
+}
+.header-content-logo {
+	text-align: center;
+}
+.minimum-amount-notice {
+	font-size:1.6em;
+	font-family:'domain-regular';
+	line-height:initial;
+	color:#a78048;
+	text-align: center;
+}
+.cancellation-notice {
+	color: #999;
+	font-size: 1.6em;
+	margin-top: 25px;
+	text-align: center;
+}
+.conditions-apply {
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: center;
+}
+.copyright-name {
+	text-align:center;
+	font-weight: bold;
+	font-family:gt-walsheim-pro-bold;
+	padding:10px 0;
+}
+.card {
+	height: 90%;
+	margin: 1.25%;
+	width: 20rem;
+}
+.card-img-top {
+	padding: 10%;
+}
+.gift_image {
+	display: block;
+	height: 30%;
+	padding: 1.25%;
+	width: 90%;
+}
+ul {
+	list-style: none;
+}
+ul li:before {
+	content: '✓';
+	margin: 3%;
+}

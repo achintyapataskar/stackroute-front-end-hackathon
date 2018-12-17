@@ -63,5 +63,11 @@
     -ms-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
+<<<<<<< HEAD
     -ms-transform: translate3d(0, 0, 0);
 }
+=======
+    -ms-transform: translate3d(0, 0, 0)
+}
+
+>>>>>>> 680781d837461c7c6955b600bb809e81b5f7e3f4
