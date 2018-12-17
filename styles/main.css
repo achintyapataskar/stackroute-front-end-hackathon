@@ -3975,6 +3975,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 #innerbanner {
+    background-image: url(../portfolio_files/portfolio-logo.png);
     padding: 10px 0
 }
 
