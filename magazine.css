@@ -6568,3 +6568,12 @@ select {
     text-align: center;
 }
 
+.contents{
+    list-style-type:none;
+    margin-left: 900px;
+  
+    text-align:right;
+}
+
+
+
