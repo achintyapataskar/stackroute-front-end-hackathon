@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://s0.2mdn.net/8173216/1544551544137/Gemfields_sus_std_728x90/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="ad.size" content="width=728,height=90">
+
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+
+    <script type="text/javascript" src="./TweenMax.min.js"></script>
+
+    <script type="text/javascript" src="./main.js"></script>
+
+    <script language="javascript">
+        var clickTag = 'https://gemfields.com/';
+    </script>
+
+    <title></title>
+
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+
+<body onload="init();">
+
+<div id="main_container">
+<!--start main_container-->
+    <div id="main_content" class="hidden" style="visibility: inherit; opacity: 1;">
+    <!--start main_content-->
+
+        <img src="./img_1.jpg" id="bg" class="retina">
+        <img src="./c0.png" id="c0" class="retina">
+
+        <div id="whiteFader" class="hidden" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+
+        <img src="./img_2.jpg" id="bg2" class="retina hidden" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px) scale(0.5, 0.5);">
+
+        <img src="./branding.png" id="branding" class="retina">
+
+        <img src="./c1.png" id="c1" class="retina hidden" style="visibility: hidden; opacity: 0; transform: translate3d(0px, 0px, 0px) scale(0.5, 0.5);">
+
+        <img src="./c2.png" id="c2" class="retina hidden" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px) scale(0.5, 0.5);">
+
+        <img src="./c3.png" id="c3" class="retina hidden" style="visibility: inherit; opacity: 1; transform: translate3d(0px, 0px, 0px) scale(0.5, 0.5);">
+
+        <img src="./arrow.png" id="arrow" class="retina hidden" style="transform: translate3d(0px, 0px, 0px) scale(0.5, 0.5); visibility: inherit; opacity: 1;">
+
+
+    <!--end main_content-->
+    </div>
+
+<div id="default_exit" class="btn"></div>
+<!--end main_container-->
+</div>
+<script>
+    var clickArea = document.getElementById('default_exit');
+    clickArea.onclick = function() {
+        window.open(clickTag)
+    }
+</script>
+
+
+
+</body></html>
